@@ -1,0 +1,38 @@
+rules_version = '2';
+
+// Guest wishes are written by wedding guests with no sign-in, so the rules
+// below are what stands between the collection and the open internet. They
+// deliberately allow anonymous reads and writes, and lean on shape validation
+// instead of identity to keep junk out.
+//
+// The previous rules were Firebase's 30-day test-mode default, which expired
+// and started returning PERMISSION_DENIED to every read.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /wishes/{wishId} {
+      allow read: if true;
+
+      // createdAt must be the server's clock, not a client-supplied value, so
+      // a guest cannot pin their wish to the top of the desc-ordered list.
+      allow create: if request.resource.data.keys().hasOnly(['name', 'text', 'createdAt'])
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() >= 1
+                    && request.resource.data.name.size() <= 60
+                    && request.resource.data.text is string
+                    && request.resource.data.text.size() >= 1
+                    && request.resource.data.text.size() <= 500
+                    && request.resource.data.createdAt == request.time;
+
+      // A wish is a keepsake; editing someone else's is never wanted.
+      allow update: if false;
+
+      // Matches the × button the UI renders on every wish for every visitor.
+      // Tighten to `if false` to make the guestbook append-only.
+      allow delete: if true;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
