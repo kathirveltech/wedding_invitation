@@ -26,7 +26,7 @@ export default function Hero({ groomName, brideName, dateDisplay, venueName, ven
         </motion.p>
         <motion.h1 className="hero__names" variants={item}>
           {groomName}
-          <span className="hero__amp">&amp;</span>
+          <span className="hero__amp"> &amp; </span>
           {brideName}
         </motion.h1>
         <motion.div variants={item}>

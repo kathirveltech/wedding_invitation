@@ -4,10 +4,10 @@ const links = [
   { id: "couple", label: "Couple" },
   { id: "story", label: "Story" },
   { id: "events", label: "Events" },
-  { id: "gallery", label: "Gallery" },
+  // { id: "gallery", label: "Gallery" },
   { id: "venue", label: "Venue" },
   // { id: "rsvp", label: "RSVP" }, // disabled for now
-  { id: "wishes", label: "Wishes" },
+  // { id: "wishes", label: "Wishes" },
 ];
 
 export default function Navbar({ groomInitial, brideInitial }) {

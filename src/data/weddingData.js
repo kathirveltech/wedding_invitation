@@ -15,33 +15,33 @@ import bgMusic from "../asset/Thumbi-Thullal-Love-BGM.mp3";
 
 export const weddingData = {
   groom: {
-    name: "Vignesh R",
-    initial: "V",
+    name: "Amirthaganesan C",
+    initial: "A",
     photo: groomPhoto,
     about:
-      "Warm-hearted and easygoing, Vignesh is the one who turns ordinary days into inside jokes. Ever since that first meeting in 2014, his patience and quiet care have been Nandhini's steadiest comfort — and the December he finally asked her to spend forever with him remains his proudest moment.",
+      "Warm-hearted and easygoing, Amir is the one who turns ordinary days into inside jokes. Ever since that first meeting in 2020, his patience and quiet care have been Vembu's steadiest comfort — and the June he finally asked her to spend forever with him remains his proudest moment.",
   },
   bride: {
-    name: "Nandhini R",
-    initial: "N",
+    name: "Vembu V",
+    initial: "V",
     photo: bridePhoto,
     about:
-      "Nandhini's warmth and laughter have a way of making any room feel like home. Her friendship with Vignesh bloomed slowly since 2014 into a love neither of them saw coming, and when he finally asked, her yes came without a moment's hesitation.",
+      "Vembu's warmth and laughter have a way of making any room feel like home. Her friendship with Amir bloomed slowly since 2020 into a love neither of them saw coming, and when he finally asked, her yes came without a moment's hesitation.",
   },
 
   // ISO date-time of the wedding (used by hero + countdown)
-  weddingDate: "2026-09-13T10:00:00",
-  weddingDateDisplay: "13 · 09 · 2026",
+  weddingDate: "2026-10-25T09:00:00",
+  weddingDateDisplay: "25 · 10 · 2026",
 
   venue: {
-    name: "Agathiyan Thirumana Mandapam",
-    city: "Karaikudi",
-    address: "Agathiyan Thirumana Mandapam, Karaikudi",
+    name: "Pasu Madam",
+    city: "Thirukadaiyur",
+    address: "Vimalambigai Thirumana Mandapam, Sannathi St, Thirukadaiyur, Tamil Nadu 609311",
+    //Vimalambigai Thirumana Mandapam, Sannathi St, Thirukadaiyur, Tamil Nadu 609311
     // Paste a Google Maps EMBED url here to show the live map.
     // (Google Maps → Share → Embed a map → copy the src URL)
-    mapEmbedUrl: "https://maps.google.com/maps?q=10.074367,78.7632812&z=16&output=embed",
-    directionsUrl:
-      "https://www.google.com/maps/place/Agathiyan+Thirumana+Mandapam/@10.0743723,78.7607063,816m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3b00675b954670b7:0xb52dc782cf143a1f!8m2!3d10.074367!4d78.7632812!16s%2Fg%2F11hcj16mn2?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4160.443343016215!2d79.80182281111429!3d11.074556810083319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a551938929cef7d%3A0x8931b3ea5c671330!2sPasu%20Madam!5e0!3m2!1sen!2sin!4v1790515386412!5m2!1sen!2sin",
+    directionsUrl: "https://maps.app.goo.gl/K1nyX1nGq5TxoHMBA",
   },
 
   quotes: [
@@ -56,48 +56,48 @@ export const weddingData = {
   story: [
     {
       id: "met",
-      year: "2014",
+      year: "2020",
       title: "We First Met",
-      text: "June 2014 — the moment our paths first crossed and a quiet friendship began.",
-    },
-    {
-      id: "first-date",
-      year: "2015",
-      title: "Our First Date",
-      text: "June 2015 — the day friendship turned into something neither of us wanted to end.",
+      text: "March 2020 — the moment our paths first crossed and a quiet friendship began.",
     },
     {
       id: "proposal",
-      year: "2015",
+      year: "2020",
       title: "The Proposal",
-      text: "December 2015 — one question, one very happy yes.",
+      text: "June 2020 — one question, one very happy yes.",
+    },
+    {
+      id: "first-date",
+      year: "2020",
+      title: "Our First Date",
+      text: "July 2020 — the day friendship turned into something neither of us wanted to end.",
     },
   ],
 
   events: [
-    {
-      id: "engagement",
-      icon: "💍",
-      title: "Engagement",
-      date: "12 Sep 2026",
-      time: "Time to be announced",
-      venue: "Agathiyan Thirumana Mandapam, Karaikudi",
-    },
-    {
-      id: "reception",
-      icon: "🥂",
-      title: "Reception",
-      date: "12 Sep 2026",
-      time: "Time to be announced",
-      venue: "Agathiyan Thirumana Mandapam, Karaikudi",
-    },
+    // {
+    //   id: "engagement",
+    //   icon: "💍",
+    //   title: "Engagement",
+    //   date: "12 Sep 2026",
+    //   time: "Time to be announced",
+    //   venue: "Agathiyan Thirumana Mandapam, Karaikudi",
+    // },
+    // {
+    //   id: "reception",
+    //   icon: "🥂",
+    //   title: "Reception",
+    //   date: "12 Sep 2026",
+    //   time: "Time to be announced",
+    //   venue: "Agathiyan Thirumana Mandapam, Karaikudi",
+    // },
     {
       id: "wedding",
       icon: "❤️",
       title: "Wedding",
-      date: "13 Sep 2026",
-      time: "10:00 AM",
-      venue: "Agathiyan Thirumana Mandapam, Karaikudi",
+      date: "25 Oct 2026",
+      time: "09:00 AM",
+      venue: "Pasu Madam, Vimalambigai Thirumana Mandapam, Sannathi St, Thirukadaiyur.",
     },
   ],
 
