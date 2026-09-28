@@ -434,8 +434,8 @@ button {
   box-shadow: var(--shadow-soft);
 }
 .couple__photo {
-  width: 140px;
-  height: 140px;
+  width: 154px;
+  height: 202px;
   margin: 0 auto var(--space-md);
   border-radius: 50%;
   border: 3px solid var(--gold-light);
@@ -985,3 +985,33 @@ button {
   50%  { transform: translateX(-50%) translateY(8px); }
   100% { transform: translateX(-50%) translateY(0); }
 }
+
+/* .door_right_image {
+    max-width: 35%;
+    display: block;
+    margin-top: 223px;
+    margin-left: 35px;
+}
+.door_left_image {
+    max-width: 36%;
+    display: block;
+    margin-top: 210px;
+    margin-left: 451px;
+} */
+
+/* Mobile Responsive */
+/*
+@media (max-width: 768px) {
+    .door_right_image {
+        max-width: 45%;
+        margin-top: 120px;
+        margin-left: 10px;
+    }
+
+    .door_left_image {
+        max-width: 45%;
+        margin-top: 115px;
+        margin-left: 50%;
+        transform: translateX(-10%);
+    }
+} */

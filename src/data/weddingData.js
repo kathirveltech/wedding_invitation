@@ -3,8 +3,8 @@
 // on the website. No component contains hardcoded text.
 // ============================================================
 
-import groomPhoto from "../asset/Image (13).jpg";
-import bridePhoto from "../asset/Image (14).jpg";
+import groomPhoto from "../asset/Image (13).jpeg";
+import bridePhoto from "../asset/Image (14).jpeg";
 import galleryPhoto15 from "../asset/Image (15).jpg";
 import galleryPhoto16 from "../asset/Image (16).jpg";
 import galleryPhoto17 from "../asset/Image (17).jpg";
